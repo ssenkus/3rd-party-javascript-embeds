@@ -251,12 +251,12 @@
     }
 }).call(this);
 ;
-(function insite() {
-    var hostServer = '//www.gpcontent.com/insite/eventAPI',
+(function tracker() {
+    var hostServer = '//www.steven-senkus.com.com/api/',
             winheight = (typeof innerHeight === 'number') ? window.innerHeight : document.body.clientHeight,
             winwidth = (typeof innerWidth === 'number') ? window.innerWidth : document.body.clientWidth,
             userLog,
-            cookieName = 'insiteId',
+            cookieName = 'trackerId',
             exdays = 365,
             sourceFk = 1,
             categoryFk = 1,
@@ -270,17 +270,17 @@
         action.set = function(value) {
             var exdate = new Date(),
                     // the hidden cookie identifier element
-                    insiteInput = document.getElementsByName('insite_id');
+                    trackerInput = document.getElementsByName('tracker_id');
 
 
             exdate.setDate(exdate.getDate() + exdays);
             var c_value = escape(value) + ((exdays === null) ? "" : "; expires=" + exdate.toUTCString());
             document.cookie = cookieName + "=" + c_value + "; path=/";
-            // if visitor comes to leadfrom page without previously being on an insite.js page, 
+            // if visitor comes to leadfrom page without previously being on an tracker.js page, 
             // hidden form field value will be empty at form submit.  
-            // this code adds insiteId UUID to input 'insite_id' on form submission page
-            if (insiteInput.length > 0 && insiteInput[0].value === '') {
-                insiteInput[0].value = cookieHash;
+            // this code adds trackerId UUID to input 'tracker_id' on form submission page
+            if (trackerInput.length > 0 && trackerInput[0].value === '') {
+                trackerInput[0].value = cookieHash;
             }
 
         };
