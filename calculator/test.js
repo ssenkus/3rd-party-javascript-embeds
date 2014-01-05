@@ -23,10 +23,10 @@ var GPWIDGET = (function(window, undefined) {
             proto = document.location.protocol, // http: or https:
             exports = [], // data to be collected from publisher site/user, to be sent to the server
             urls = {// required widget files
-        baseWidgetUrl: proto + '//dev.graphicproducts.com/test-widget/arc-flash/',
+        baseWidgetUrl: proto + '',
         jqueryCdnUrl: proto + '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js',
-        arcFlashCss: proto + '//dev.graphicproducts.com/test-widget/arc-flash/css/arc-flash.css',
-        arcFlashMain: proto + '//dev.graphicproducts.com/test-widget/arc-flash/js/arc-flash.js'
+        arcFlashCss: proto + 'arc-flash.css',
+        arcFlashMain: proto + 'arc-flash.js'
     };
 
     // loads JavaScript files, executes callback when loaded

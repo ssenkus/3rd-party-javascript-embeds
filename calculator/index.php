@@ -6,7 +6,6 @@
 
         <!-- TEST FOR JQUERY PRESENCE IN PAGE -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-        <link rel="stylesheet" href="http://www.graphicproducts.com/styles/default.css" />
         <style>
 
             html {
@@ -81,7 +80,7 @@
                     s.type = 'text/javascript';
                     s.id = "gpEmbedCalc-afc";
                     s.async = true;
-                    s.src = document.location.protocol + '//dev.graphicproducts.com/test-widget/test.js'
+                    s.src = document.location.protocol + 'test.js'
                     node.parentNode.insertBefore(s, node);
                 })();
             </script>
@@ -91,13 +90,13 @@
             <h3>Sidebar</h3>
             <hr />
             <div id="gpEmbedBuild"></div>
-            <noscript><p style="border: 2px dotted #000!important; background-color:#fff!important; color: #f70!important; padding: 4px!important; font-weight:bold!important; font-family: Helvetica, Arial, sans-serif!important; ">Please enable Javascript to use this Graphic Products widget!<br />  More information at <a href="//www.graphicproducts.com/syndication">GP Syndication</a></p></noscript>
+            <noscript><p style="border: 2px dotted #000!important; background-color:#fff!important; color: #f70!important; padding: 4px!important; font-weight:bold!important; font-family: Helvetica, Arial, sans-serif!important; ">Please enable Javascript to use this widget!<br />  More information at <a href="//www.example.com/syndication">Syndication</a></p></noscript>
             <hr />
             <ul>
-                <li><a href="//dev.graphicproducts.com/test-widget/test.js">test.js</a></li>
-                <li><a href="//dev.graphicproducts.com/test-widget/arc-flash/html/arc-flash.html">arc-flash.html</a></li>
-                <li><a href="//dev.graphicproducts.com/test-widget/arc-flash/css/arc-flash.css">arc-flash.css</a></li>
-                <li><a href="//dev.graphicproducts.com/test-widget/arc-flash/js/arc-flash.js">arc-flash.js</a></li>
+                <li><a href="test.js">test.js</a></li>
+                <li><a href="arc-flash.html">arc-flash.html</a></li>
+                <li><a href="arc-flash.css">arc-flash.css</a></li>
+                <li><a href="arc-flash.js">arc-flash.js</a></li>
             </ul>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

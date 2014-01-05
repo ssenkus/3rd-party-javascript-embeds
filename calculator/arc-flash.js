@@ -33,7 +33,7 @@
         function getWidgetHtml() {
             $.ajax({
                 type: 'GET',
-                url: GP.getUrl.baseWidgetUrl + "html/arc-flash.html",
+                url: GP.getUrl.baseWidgetUrl + "arc-flash.html",
                 async: true,
                 // dataType: 'jsonp', // need this according to SOP
                 success: function(html) {
