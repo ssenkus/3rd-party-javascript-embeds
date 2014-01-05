@@ -1,0 +1,136 @@
+<div id="gpWrap" class="gpWidgetTheme-industrial">
+    <div id="gpHeader">
+        <h2>Arc Flash<br/><span id="gpTitle">Calculator</span></h2>
+    </div>
+    <div id="gpContent">
+        <div id="gpInputs">
+            <div class="inContainer">
+                <label for="Rating">Device Rating<span class="gpQuestMark">?</span></label>
+                <select id="Rating">
+                    <option value="30">30A</option>
+                    <option value="60">60A</option>
+                    <option value="100">100A</option>
+                    <option value="200">200A</option>
+                    <option value="400">400A</option>
+                    <option value="600">600A</option>
+                    <option value="800">800A</option>
+                    <option value="1200">1200A</option>
+                    <option value="1600">1600A</option>
+                    <option value="2000">2000A</option>
+                </select>
+            </div>
+            <div class="inContainer">
+                <label for="Volts">System Voltage<span class="gpQuestMark">?</span></label>
+                <select size="1" id="Volts">
+                    <option value="208">208V</option>
+                    <option value="240">240V</option>
+                    <option value="480">480V</option>
+                    <option selected="" value="600">600V</option>
+                </select>
+            </div>
+            <div class="inContainer">
+                <label for="Gap">Arc Gap<span class="gpQuestMark">?</span></label>
+                <select id="Gap">
+                    <option value="31.75">1.25in</option>
+                    <option value="50.8">2.00in</option>
+                    <option value="127">5.00in</option>
+                </select>
+            </div>
+            <div class="inContainer">
+                <label for="Lgibf">Fault Current<span class="gpQuestMark">?</span></label>
+                <select id="Lgibf">
+                    <option value="1:0.00000">1KA</option>
+                    <option value="2:0.30103">2KA</option>
+                    <option value="3:0.60206">4KA</option>
+                    <option value="4:0.77816">6KA</option>
+                    <option value="5:0.90310">8KA</option>
+                    <option value="6:1.00000">10KA</option>
+                    <option value="7:1.17611">15KA</option>
+                    <option value="8:1.30103">20KA</option>
+                    <option value="9:1.39795">25KA</option>
+                    <option value="10:1.47713">30KA</option>
+                    <option value="11:1.54407">35KA</option>
+                    <option value="12:1.60206">40KA</option>
+                    <option value="13:1.65322">45KA</option>
+                    <option value="14:1.69898">50KA</option>
+                    <option value="15:1.77816">60KA</option>
+                    <option value="16:1.84510">70KA</option>
+                    <option value="17:1.90309">80KA</option>
+                    <option value="18:1.95425">90KA</option>
+                    <option value="19:2.00000">100KA</option>
+                    <option value="20:2.02531">106KA</option>
+                </select>
+            </div>
+            <div class="inContainer">
+                <label for="Distance">Distance to Arc<span class="gpQuestMark">?</span></label>
+                <select id="Distance">
+                    <option value="304.8">12in</option>
+                    <option value="381">15in</option>
+                    <option value="457.2">18in</option>
+                    <option value="508">20in</option>
+                    <option value="609.6">24in</option>
+                    <option value="762">30in</option>
+                    <option value="914.4">36in</option>
+                </select>
+            </div>
+            <div id="gpInputControls">
+                <button id="gpSolve" type="button">SOLVE</button>
+                <button id="gpReset" type="button">RESET</button>
+                <button id="gpHelp" type="button">HELP</button>
+            </div>
+        </div>
+        <div id="gpOutputsWarning"></div>
+        <div id="gpOutputs">
+            <div id="gpOutputsHeadings">
+                <p id="gpOutputsHeadings-fuse">FUSE</p>
+                <p id="gpOutputsHeadings-cibr">CIRCUIT<br /> BREAKER</p>
+            </div> 
+            <div class="outContainer">
+                <label>Incident Energy <span class="gpUnits">(Cal/cm&#178)</span></label>
+                <input type="text" class="fuse" name="textfield1" />
+                <input type="text" class="cb"   name="textfield2" />
+            </div>
+            <div class="outContainer">
+                <label>Flash Protection Boundary <span class="gpUnits">(in.)</span></label>
+                <input type="text" class="fuse" name="textfield3" />
+                <input type="text" class="cb"   name="textfield4" />
+            </div>
+            <div class="outContainer">
+                <label>PPE Level</label>
+                <input type="text" class="fuse" name="textfield5" />
+                <input type="text" class="cb"   name="textfield6" />
+            </div>
+            <div class="outContainer">
+                <label>Hazard Category</label>
+                <input type="text" class="fuse" name="textfield7" />
+                <input type="text" class="cb"   name="textfield8" />
+            </div>
+            <button id="gpGoStart">RESET</button>   
+        </div>
+        <div id="gpAddToSiteBox">
+            <p>Select Skin for your Calculator:</p>
+            <ul>
+                <li><button class="gpThemeSwitcher" id="gpWidgetTheme-industrial-btn">Industrial</button></li>
+                <li><button class="gpThemeSwitcher" id="gpWidgetTheme-patriot-btn">Patriot</button></li>
+                <li><button class="gpThemeSwitcher" id="gpWidgetTheme-tech-btn">Tech</button></li>
+                <li><button class="gpThemeSwitcher" id="gpWidgetTheme-noir-btn">Noir</button></li>
+            </ul>
+            <p>Copy the following text:</p>
+            <textarea id="copyCalc">Copy calc</textarea>
+        </div>
+    </div>
+
+    <div id="gpFooter">
+        <div style="padding: 5px; height: 40px;">
+            <a id="reqLink" href="http://www.graphicproducts.com" target="_blank">
+                <img id="gpLogo" src="http://dev.graphicproducts.com/test-widget/arc-flash/img/gp-icon.png" />
+            </a>
+            <button id="addToSite" ></button>
+        </div>
+        <div id="gpPromo">
+            <a href="http://www.graphicproducts.com/label-printers/duralabel-toro/index.php">
+                <img id="gpAdImage" style="width: 100%;" src="http://dev.graphicproducts.com/test-widget/arc-flash/img/gp-ad00.png" />
+            </a>
+        </div>
+    </div>
+</div>
